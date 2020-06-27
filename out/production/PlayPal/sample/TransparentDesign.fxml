@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="643.0" styleClass="color-select" stylesheets="@StyleTransparent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <BorderPane fx:id="aboutSoftwarePane" prefHeight="200.0" prefWidth="200.0" styleClass="about-color-select" stylesheets="@StyleTransparent.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="439.0" prefWidth="219.0" styleClass="color-select" stylesheets="@StyleTransparent.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="buttonGoBack" fitHeight="27.0" fitWidth="24.0" layoutX="18.0" layoutY="15.0" onMouseClicked="#handleGoBackIconAction" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                     <image>
+                        <Image url="@back.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="128.0" fitWidth="140.0" layoutX="40.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PlayPalIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="78.0" layoutY="272.0" prefHeight="30.0" prefWidth="64.0" style="-fx-text-fill: #ffffff;" text="PlayPal">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="439.0" prefWidth="426.0" styleClass="about-color-select" stylesheets="@StyleTransparent.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="64.0" prefHeight="53.0" prefWidth="82.0" style="-fx-text-fill: #ffffff;" text="About">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="-1.0" layoutY="137.0" prefHeight="247.0" prefWidth="425.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="427.0" style="-fx-text-fill: #ffffff;" text="PlayPal is an open-source media player software programmed in Java" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="425.0" style="-fx-text-fill: #FFFFFF;" text="It is created by Shahriar Ferdoush Sifat, an undergrad student at BUET." VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="22.0" prefWidth="425.0" style="-fx-text-fill: #ffffff;" text="We will be delighted to have reviews from you." VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Region prefHeight="45.0" prefWidth="425.0" />
+                        <Label style="-fx-text-fill: #ffffff;" text=" To review :">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="425.0">
+                           <children>
+                              <Region prefHeight="26.0" prefWidth="26.0" />
+                              <Label prefHeight="26.0" prefWidth="63.0" style="-fx-text-fill: #ffffff;" text="Facebook :" />
+                              <Hyperlink fx:id="facebookLink" onMouseClicked="#handleFacebookLink" prefHeight="31.0" prefWidth="256.0" style="-fx-text-fill: #ffffff;" text="Shahriar Ferdoush" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="47.0" prefWidth="425.0">
+                           <children>
+                              <Region prefHeight="47.0" prefWidth="49.0" />
+                              <Label prefHeight="26.0" prefWidth="86.0" style="-fx-text-fill: #ffffff;" text="Email :" />
+                              <VBox prefHeight="26.0" prefWidth="358.0">
+                                 <children>
+                                    <Hyperlink onAction="#handleGmailLink" style="-fx-text-fill: #ffffff;" text="shahriar.ss1212@gmail.com" />
+                                    <Hyperlink onAction="#handleUniversityMailLink" style="-fx-text-fill: #ffffff;" text="1805101@ugrad.cse.buet.ac.bd" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="26.0" prefWidth="425.0">
+                           <children>
+                              <Region prefHeight="26.0" prefWidth="26.0" />
+                              <Label prefHeight="26.0" prefWidth="63.0" style="-fx-text-fill: #ffffff;" text="GitHub:" />
+                              <Hyperlink fx:id="gitHubLink" onAction="#handleGitHubLink" onMouseClicked="#handleFacebookLink" prefHeight="31.0" prefWidth="256.0" style="-fx-text-fill: #ffffff;" text="Shahriar-Ferdoush" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+        <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="color-select" stylesheets="@StyleTransparent.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <MediaView fx:id="mediaView" fitHeight="420.0" fitWidth="643.0" />
+            </children></StackPane>
+        <BorderPane fx:id="mainBorderPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <bottom>
+                <VBox styleClass="color-transparent" stylesheets="@StyleTransparent.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Slider fx:id="seekSlider" blockIncrement="3.0" prefWidth="547.0" VBox.vgrow="ALWAYS">
+                            <padding>
+                                <Insets bottom="5.0" />
+                            </padding>
+                        </Slider>
+                        <HBox spacing="3.0" VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <children>
+                                <Button fx:id="buttonOpen" mnemonicParsing="false" onAction="#handleOpenButtonAction" prefHeight="25.0" prefWidth="31.0" />
+                                <Region HBox.hgrow="ALWAYS" />
+                        <Pane prefHeight="25.0" prefWidth="135.0" />
+                        <Button fx:id="buttonStop" mnemonicParsing="false" onAction="#handleStopButtonAction" prefHeight="25.0" prefWidth="25.0" />
+                        <Button fx:id="buttonBackward" mnemonicParsing="false" onAction="#handleBackwardButtonAction" prefHeight="25.0" prefWidth="25.0" />
+                                <Button fx:id="buttonPlay" mnemonicParsing="false" onAction="#handlePlayButtonAction" prefHeight="25.0" prefWidth="25.0" />
+                        <Button fx:id="buttonForward" mnemonicParsing="false" onAction="#handleForwardButtonAction" prefHeight="25.0" prefWidth="25.0" />
+                        <Button fx:id="buttonLoop" mnemonicParsing="false" onAction="#handleLoopButtonAction" prefHeight="25.0" prefWidth="25.0" />
+                                <Region HBox.hgrow="ALWAYS" />
+                                <Slider fx:id="volumeSlider" prefHeight="25.0" prefWidth="111.0" />
+                        <ChoiceBox fx:id="speedChoiceBox" prefHeight="25.0" prefWidth="53.0" styleClass="color-transparent" />
+                            </children>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                    </padding>
+                </VBox>
+            </bottom>
+            <top>
+                <VBox BorderPane.alignment="CENTER">
+                    <children>
+                        <StackPane>
+                            <children>
+                                <HBox styleClass="color-transparent" stylesheets="@StyleTransparent.css">
+                                    <children>
+                                        <Pane prefHeight="22.0" prefWidth="22.0">
+                                            <children>
+                                                <ImageView fx:id="aboutButton" fitHeight="15.0" fitWidth="15.0" layoutX="6.0" layoutY="3.0" onMouseClicked="#handleAboutButtonAction" pickOnBounds="true" preserveRatio="true" styleClass="img2">
+                                                    <image>
+                                                        <Image url="@media.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </Pane>
+                                        <Label onMouseClicked="#handleAboutButtonAction" prefHeight="22.0" prefWidth="54.0" styleClass="color-select3" stylesheets="@StyleTransparent.css" text=" PlayPal" textFill="#63d6da">
+                                            <font>
+                                                <Font name="Berlin Sans FB" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Pane styleClass="label" stylesheets="@StyleTransparent.css">
+                                            <children>
+                                                <ImageView fx:id="exitIcon" fitHeight="14.0" fitWidth="11.0" layoutX="-5.0" layoutY="5.0" onMouseClicked="#handleTopExit" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                                                    <image>
+                                                        <Image url="@cross.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </StackPane>
+                    </children>
+                </VBox>
+            </top></BorderPane>
+    </children>
+</AnchorPane>

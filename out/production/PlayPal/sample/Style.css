@@ -1,0 +1,99 @@
+.label {
+    -fx-text-fill: #535353;
+}
+
+.label {
+    -fx-text-fill: #000000;
+}
+
+/*.slider{*/
+/*	-fx-background-color: #ff4d00;*/
+/*}*/
+
+.text-input {
+    -fx-background-radius: 20;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #D4CEE3;
+}
+
+.button {
+    -fx-background-color: #006aec;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+    /*-fx-border-radius: 20;*/
+    /*-fx-border-color: #0035e5;*/
+}
+
+.button:hover {
+    /*-fx-background-color: #0035e5;*/
+    -fx-background-color: #0064e3;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+}
+
+.button:pressed {
+    -fx-text-fill: #ffe494;
+}
+
+.button2 {
+    -fx-background-color: #dbdad9;
+    -fx-text-fill: #4c4c4c;
+}
+
+.button2:hover {
+    -fx-background-color: #bdbdbd;
+    -fx-text-fill: #2b2b2b;
+}
+
+.linear-grad {
+    -fx-background-color: linear-gradient(#7b00ff, #7d3bd2, #7b00ff);
+}
+
+.text-show{
+    -fx-text-fill: #ffffff;
+}
+
+.color-select {
+    -fx-background-color: #1778F2;
+}
+
+.color-select2 {
+    -fx-background-color: #fefeff;
+}
+
+.color-select3 {
+    -fx-text-fill: white;
+}
+
+.color-select4 {
+    -fx-background-color: #2b2b2b;
+}
+
+.color-transparent {
+    -fx-background-color: transparent;
+}
+
+.menu-bar{
+    -fx-background-color: #1778F2;
+    -fx-text-fill: #ffffff;
+}
+
+.menu-bar .label {
+    -fx-text-fill: white;
+}
+
+.img {
+    -fx-opacity: .7;
+}
+
+.img:hover{
+    -fx-opacity: 1.0;
+}
+
+.img2 {
+    -fx-opacity: .90;
+}
+
+.img2:hover{
+    -fx-opacity: 1.0;
+}
